@@ -152,7 +152,7 @@ function App() {
       <div className="mx-auto max-w-md px-4 py-12 flex flex-col gap-8">
 
         {/* ── HEADER (BALANCE CARD) ── */}
-        <header className="bg-pink-400 border-[3px] border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+        <header className="bg-[#C1FF72] border-[3px] border-black p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <WalletIcon className="h-6 w-6" />
@@ -196,7 +196,7 @@ function App() {
               <div key={i} className="flex flex-col items-center flex-1 h-full">
                 <div className="flex items-end gap-[1px] h-full w-full">
                   <div 
-                    className="flex-1 bg-[#A3B18A] border-x border-t border-black transition-all hover:opacity-80" 
+                    className="flex-1 bg-[#C1FF72] border-x border-t border-black transition-all hover:opacity-80" 
                     style={{ height: `${(d.inc / maxVal) * 100}%` }}
                   ></div>
                   <div 
@@ -222,7 +222,7 @@ function App() {
             </button>
             <button 
               onClick={() => setType('income')}
-              className={`flex-1 py-2 text-[10px] font-black uppercase border-2 border-black transition-all ${type === 'income' ? 'bg-[#A3B18A] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-gray-100'}`}
+              className={`flex-1 py-2 text-[10px] font-black uppercase border-2 border-black transition-all ${type === 'income' ? 'bg-[#C1FF72] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-gray-100'}`}
             >
               Income
             </button>
@@ -248,7 +248,7 @@ function App() {
             />
             <button
               type="submit"
-              className={`flex items-center justify-center gap-2 border-[3px] border-black py-4 text-sm font-black uppercase transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-0 active:translate-y-0 active:shadow-none ${type === 'income' ? 'bg-[#A3B18A]' : 'bg-pink-400'}`}
+              className={`flex items-center justify-center gap-2 border-[3px] border-black py-4 text-sm font-black uppercase transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-0 active:translate-y-0 active:shadow-none ${type === 'income' ? 'bg-[#C1FF72]' : 'bg-pink-400'}`}
             >
               <PlusIcon className="h-5 w-5" />
               Log {type}
@@ -282,7 +282,7 @@ function App() {
                   className="bg-white border-[3px] border-black px-4 py-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center justify-between group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className={`p-1 border-2 border-black ${item.type === 'income' ? 'bg-[#A3B18A]' : 'bg-pink-400'}`}>
+                    <div className={`p-1 border-2 border-black ${item.type === 'income' ? 'bg-[#C1FF72]' : 'bg-pink-400'}`}>
                       {item.type === 'income' ? <TrendingUpIcon className="h-4 w-4" /> : <WalletIcon className="h-4 w-4" />}
                     </div>
                     <div>
