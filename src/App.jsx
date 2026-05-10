@@ -307,6 +307,14 @@ function App() {
           </div>
         </section>
 
+        <footer className="text-center pt-8 border-t-2 border-black mt-8">
+          <p className="text-[11px] font-black uppercase tracking-[0.3em]">
+            SpendJer <span className="text-pink-500">Edition</span>
+          </p>
+          <p className="text-[8px] font-black text-gray-500 uppercase">
+            EST. 2026 · Secure & Local
+          </p>
+        </footer>
       </div>
     </div>
   )
