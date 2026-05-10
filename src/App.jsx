@@ -114,7 +114,7 @@ function App() {
   // ─── EXPORT LOGIC ───
   const exportPDF = () => {
     const doc = jsPDF()
-    doc.text("Vibe Tracker 102 - Financial Report", 14, 15)
+    doc.text("SpendJer - Financial Report", 14, 15)
     
     const tableData = entries.map(e => [
       e.date,
@@ -156,7 +156,7 @@ function App() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <WalletIcon className="h-6 w-6" />
-              <h1 className="text-xl font-black uppercase">Vibe Finance</h1>
+              <h1 className="text-xl font-black uppercase">SpendJer</h1>
             </div>
             <span className="text-[10px] font-black bg-black text-white px-2 py-0.5">EST. 2026</span>
           </div>
